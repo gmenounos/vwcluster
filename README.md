@@ -4,7 +4,7 @@ This repository is about reverse engineering and internals of Volkswagen MKIV Go
 
 Unless otherwise noted, the following information applies to the Passat W8 FIS (full height red LCD display) cluster (VW part number 3B7 920 946E).
 
-### Hardware
+## Hardware
 
 The cluster consists of a main board and a small daughterboard that controls the LCD. The main board is powered by a Micronas CDC16xxF-E microcontroller which uses the 65C816 instruction set. It has 6KB of internal RAM and a bit more than 128KB of internal ROM.
 
@@ -23,7 +23,7 @@ KW1281Test COM4 10400 17 DumpMem $48000 $4000
 ````
 This will create 5 files, which can be concatenated and then used to create a [6502bench SourceGen](https://6502bench.com/) project.
 
-### Credits
+## Credits
 Protocol Info: https://www.blafusel.de/obd/obd2_kw1281.html  
 VW Radio Reverse Engineering Info: https://github.com/mnaberez/vwradio  
 6502bench SourceGen: https://6502bench.com/
