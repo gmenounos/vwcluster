@@ -13,11 +13,11 @@ Bank 0 consists of 6KB RAM, 2KB microcontroller registers and 24KB ROM. Banks 1-
 Assuming your KKL cable is attached to serial port COM4, here is how to dump the 5 banks of ROM using the [KW1281Test tool](https://github.com/gmenounos/kw1281test):
 
 ```
-KW1281Test COM4 10400 17 DumpMem $02000 $6000
-KW1281Test COM4 10400 17 DumpMem $18000 $8000
-KW1281Test COM4 10400 17 DumpMem $28000 $8000
-KW1281Test COM4 10400 17 DumpMem $38000 $8000
-KW1281Test COM4 10400 17 DumpMem $48000 $4000
+.\kw1281test.exe COM4 10400 17 DumpMem $02000 $6000
+.\kw1281test.exe COM4 10400 17 DumpMem $18000 $8000
+.\kw1281test.exe COM4 10400 17 DumpMem $28000 $8000
+.\kw1281test.exe COM4 10400 17 DumpMem $38000 $8000
+.\kw1281test.exe COM4 10400 17 DumpMem $48000 $4000
 ```
 This will create 5 files, which can be concatenated and then used to create a [6502bench SourceGen](https://6502bench.com/) project.
 
