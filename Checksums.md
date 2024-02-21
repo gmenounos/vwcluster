@@ -13,7 +13,7 @@ Here are the addresses and lengths of the checksum and 2 checksum-protected regi
 | Speedo X-Axis ($10) | $220           | $258           |
 | Speedo Y-Axis ($10) | $230           | $268           |
 
-The checksum is calculated by adding up (modulo 256) the values of all the bytes in Region 1 and Region 2 and then invering the bits in the result by XORing it with $FF.
+The sum (modulo 256) of the checksum and all the bytes in Region 1 and Region 2 must equal $FF.
 
 Here is some sample C# code for calculating the checksum of a VWK501 EEPROM:
 ```
@@ -24,17 +24,15 @@ int region1Length = 8;
 int region2Address = 0x220;
 int region2Length = 0x20;        
 
-byte sum = 0;
+byte checksum = 0xFF;
 
 for (var i = region1Address; i < region1Address + region1Length; i++)
 {
-    sum += bytes[i];
+    checksum -= bytes[i];
 }
 
 for (var i = region2Address; i < region2Address + region2Length; i++)
 {
-    sum += bytes[i];
+    checksum -= bytes[i];
 }
-
-byte checksum = (byte)(sum ^ 0xFF);
 ```
