@@ -28,7 +28,7 @@ The following table shows where various data is stored in the 2K-byte EEPROM and
 | $35E | $361 | $175E | ? |
 | $398 | $399 |       | Cluster ID for Radio |
 | $39A | $3E3 | $1764 | ? |
-| $436 | $437 | $17AE | ? |
+| $436 | $437 | $17AE | [Access Level](AccessLevel.md) |
 | $438 | $485 | $17B0 | ? |
 | $4F4 | $4F9 | $0014 | Patch Header |
 | $4FA | | $0E7C | Patch Code + Data |

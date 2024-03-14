@@ -1,7 +1,7 @@
 # VW MKIV Instrument Clusters
 This repository is about reverse engineering and internals of Volkswagen MKIV Golf and Jetta instrument clusters, specifically those made by VDO. Some of these clusters are nearly identical to those used in the Passat W8. These vehicles were produced in the late 1990's and early 2000's.
 
-Unless otherwise noted, the following information applies to the Passat W8 FIS (full height red LCD display) cluster (VW part number 3B7 920 946E).
+Unless otherwise noted, the following information applies to the Passat W8 FIS (full height red LCD display) cluster (VW part number 3B7 920 946E) running VWK501 software.
 
 ## Hardware
 The cluster consists of a main board and a small daughterboard that controls the LCD. The main board is powered by a Micronas CDC16xxF-E microcontroller which uses the 65C816 instruction set. It has 6KB of internal RAM and a bit more than 128KB of internal ROM.
