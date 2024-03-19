@@ -20,7 +20,7 @@ The following table shows where various data is stored in the 2K-byte EEPROM and
 | $0D2 | $0E3 | $0C7F | VIN1 |
 | $0E4 | $0F5 | $0C7F | VIN2 |
 | $0F4 | $0FB | $0BFB | Odometer Checksum |
-| $0FC | $10B | $0010 | Odometer |
+| $0FC | $10B | $0010 | [Odometer](Odometer.md) |
 | $13C | $13D | $15CE | [GWLogin](Logins.md) |
 | $13E | $145 | $0048 | ? |
 | $146 | $183 | $15D0 | ? |
