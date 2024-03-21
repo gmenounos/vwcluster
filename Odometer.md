@@ -1,19 +1,19 @@
 # Odometer
 
-The odometer is stored in 8 consecutive blocks of 2 bytes each. Each block is initialized at the factory to $FFFF (65535). After the car travels its first 2 km, the first block is decremented by 1. After the second 2 km, the second block is decremented by 1—and so on up to block 8. Then it repeats the cycle beginning with block 1.
+The odometer is stored in 8 consecutive blocks of 2 bytes each (least signifiant byte first). Each block is initialized at the factory to $FFFF (65535). After the car travels its first 2 km, the first block is decremented by 1. After the second 2 km, the second block is decremented by 1—and so on up to block 8. Then it repeats the cycle beginning with block 1.
 
 ```
 ffff ffff ffff ffff ffff ffff ffff ffff (0 km)
-fffe ffff ffff ffff ffff ffff ffff ffff (2 km)
-fffe fffe ffff ffff ffff ffff ffff ffff (4 km)
-fffe fffe fffe ffff ffff ffff ffff ffff (6 km)
-fffe fffe fffe fffe ffff ffff ffff ffff (8 km)
-fffe fffe fffe fffe fffe ffff ffff ffff (10 km)
-fffe fffe fffe fffe fffe fffe ffff ffff (12 km)
-fffe fffe fffe fffe fffe fffe fffe ffff (14 km)
-fffe fffe fffe fffe fffe fffe fffe fffe (16 km)
-fffd fffe fffe fffe fffe fffe fffe fffe (18 km)
-fffd fffd fffe fffe fffe fffe fffe fffe (20 km)
+feff ffff ffff ffff ffff ffff ffff ffff (2 km)
+feff feff ffff ffff ffff ffff ffff ffff (4 km)
+feff feff feff ffff ffff ffff ffff ffff (6 km)
+feff feff feff feff ffff ffff ffff ffff (8 km)
+feff feff feff feff feff ffff ffff ffff (10 km)
+feff feff feff feff feff feff ffff ffff (12 km)
+feff feff feff feff feff feff feff ffff (14 km)
+feff feff feff feff feff feff feff feff (16 km)
+fdff feff feff feff feff feff feff feff (18 km)
+fdff fdff feff feff feff feff feff feff (20 km)
 etc.
 ```
 
