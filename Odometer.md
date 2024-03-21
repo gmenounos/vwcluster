@@ -1,6 +1,6 @@
 # Odometer
 
-The odometer is stored in 8 consecutive blocks of 2 bytes each (least signifiant byte first). Each block is initialized at the factory to $FFFF (65535). After the car travels its first 2 km, the first block is decremented by 1. After the second 2 km, the second block is decremented by 1—and so on up to block 8. Then it repeats the cycle beginning with block 1.
+The odometer is stored in 8 consecutive blocks of 2 bytes each. Each block represents an unsigned 16-bit word stored least significant byte first. Each block is initialized at the factory to $FFFF (65535). After the car travels its first 2 km, the first block is decremented by 1. After the second 2 km, the second block is decremented by 1—and so on up to block 8. Then it repeats the cycle beginning with block 1.
 
 ```
 ffff ffff ffff ffff ffff ffff ffff ffff (0 km)
