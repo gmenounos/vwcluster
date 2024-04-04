@@ -21,6 +21,10 @@ Assuming your KKL cable is attached to serial port COM4, here is how to dump the
 ```
 This will create 5 files, which can be concatenated and then used to create a [6502bench SourceGen](https://6502bench.com/) project.
 
+```
+copy /b cluster_mem_$002000.bin + cluster_mem_$018000.bin + cluster_mem_$028000.bin + cluster_mem_$038000.bin + cluster_mem_$048000.bin cluster_rom.bin
+```
+
 ## Credits
 Protocol Info: https://www.blafusel.de/obd/obd2_kw1281.html  
 VW Radio Reverse Engineering Info: https://github.com/mnaberez/vwradio  
