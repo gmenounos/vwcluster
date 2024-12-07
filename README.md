@@ -19,10 +19,16 @@ Assuming your KKL cable is attached to serial port COM4, here is how to dump the
 .\kw1281test.exe COM4 10400 17 DumpMem $38000 $8000
 .\kw1281test.exe COM4 10400 17 DumpMem $48000 $4000
 ```
-This will create 5 files, which can be concatenated and then used to create a [6502bench SourceGen](https://6502bench.com/) project.
+This will create 5 files, which can be concatenated and then used to create a [6502bench SourceGen](https://6502bench.com/) project:
 
+#### Windows Cmd
 ```
 copy /b cluster_mem_$002000.bin + cluster_mem_$018000.bin + cluster_mem_$028000.bin + cluster_mem_$038000.bin + cluster_mem_$048000.bin cluster_rom.bin
+```
+
+#### Linux/macOS
+```
+cat cluster_mem_\$002000.bin cluster_mem_\$018000.bin cluster_mem_\$028000.bin cluster_mem_\$038000.bin cluster_mem_\$048000.bin > cluster_rom.bin
 ```
 
 ## Credits
