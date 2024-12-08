@@ -12,7 +12,7 @@ Bank 0 consists of 6KB RAM, 2KB microcontroller registers and 24KB ROM. Banks 1-
 
 Assuming your KKL cable is attached to serial port COM4, here is how to dump the 5 banks of ROM using the [KW1281Test tool](https://github.com/gmenounos/kw1281test):
 
-```
+```cmd
 .\kw1281test.exe COM4 10400 17 DumpMem $02000 $6000
 .\kw1281test.exe COM4 10400 17 DumpMem $18000 $8000
 .\kw1281test.exe COM4 10400 17 DumpMem $28000 $8000
@@ -22,16 +22,16 @@ Assuming your KKL cable is attached to serial port COM4, here is how to dump the
 This will create 5 files, which can be concatenated and then used to create a [6502bench SourceGen](https://6502bench.com/) project:
 
 #### Windows Cmd
-```
+```cmd
 copy /b cluster_mem_$002000.bin + cluster_mem_$018000.bin + cluster_mem_$028000.bin + cluster_mem_$038000.bin + cluster_mem_$048000.bin cluster_rom.bin
 ```
 
 #### Linux/macOS
-```
+```shell
 cat cluster_mem_\$002000.bin cluster_mem_\$018000.bin cluster_mem_\$028000.bin cluster_mem_\$038000.bin cluster_mem_\$048000.bin > cluster_rom.bin
 ```
 
 ## Credits
-Protocol Info: https://www.blafusel.de/obd/obd2_kw1281.html  
-VW Radio Reverse Engineering Info: https://github.com/mnaberez/vwradio  
+Protocol Info: https://www.blafusel.de/obd/obd2_kw1281.html
+VW Radio Reverse Engineering Info: https://github.com/mnaberez/vwradio
 6502bench SourceGen: https://6502bench.com/
