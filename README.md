@@ -32,6 +32,6 @@ cat cluster_mem_\$002000.bin cluster_mem_\$018000.bin cluster_mem_\$028000.bin c
 ```
 
 ## Credits
-Protocol Info: https://www.blafusel.de/obd/obd2_kw1281.html
-VW Radio Reverse Engineering Info: https://github.com/mnaberez/vwradio
+Protocol Info: https://www.blafusel.de/obd/obd2_kw1281.html<br/>
+VW Radio Reverse Engineering Info: https://github.com/mnaberez/vwradio<br/>
 6502bench SourceGen: https://6502bench.com/
