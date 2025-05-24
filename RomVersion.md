@@ -11,3 +11,5 @@ ECU: 3B7920946E  KOMBI+WEGFAHRSP VDO V09
 02: $18 $08 $01 $0B $1C $09
 03: VW/Sk MH Serie/Flash
 ```
+
+**Note:** On this site, I would describe that ROM version as "VWK501MH-01.10" (i.e. flip the order of $10 and $01 so that it matches what's printed on the cluster label).
