@@ -1,6 +1,6 @@
-# Distance Impulse Value (K-Value)
+# Distance Impulse Number (K-Value)
 
-The instrument cluster calculates vehicle speed and distance travelled by counting pulses sent from either the transmission or the ABS controller. The number of pulses per km travelled is called the Distance Impulse Value, also known as the K-Value. By adjusting the last digit of the cluster's soft coding, the K-value can be set to one of several (usually 4-6) hardcoded values.
+The instrument cluster calculates vehicle speed and distance travelled by counting pulses sent from either the transmission or the ABS controller. The number of pulses per km travelled is called the Distance Impulse Number, also known as the K-Value. By adjusting the last digit of the cluster's soft coding, the K-value can be set to one of several (usually 4-6) hardcoded values.
 
 VDO VWK501 and VWK503 clusters contain several K-Value tables in their ROMs. The table that gets used depends on which vehicle family the cluster is configured for:
 
