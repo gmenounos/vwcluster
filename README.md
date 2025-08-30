@@ -23,12 +23,12 @@ This will create 5 files, which can be concatenated and then used to create a [6
 
 #### Windows Cmd
 ```cmd
-copy /b cluster_mem_$002000.bin + cluster_mem_$018000.bin + cluster_mem_$028000.bin + cluster_mem_$038000.bin + cluster_mem_$048000.bin cluster_rom.bin
+copy /b cluster_mem_0x002000.bin + cluster_mem_0x018000.bin + cluster_mem_0x028000.bin + cluster_mem_0x038000.bin + cluster_mem_0x048000.bin cluster_rom.bin
 ```
 
 #### Linux/macOS
 ```shell
-cat cluster_mem_\$002000.bin cluster_mem_\$018000.bin cluster_mem_\$028000.bin cluster_mem_\$038000.bin cluster_mem_\$048000.bin > cluster_rom.bin
+cat cluster_mem_0x002000.bin cluster_mem_0x018000.bin cluster_mem_0x028000.bin cluster_mem_0x038000.bin cluster_mem_0x048000.bin > cluster_rom.bin
 ```
 
 ## Credits
