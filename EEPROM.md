@@ -1,6 +1,21 @@
 # EEPROM Addresses
 
-The following table shows where various data is stored in the 2K-byte EEPROM and what RAM addresses the data is loaded into.
+The following table shows the addresses and lengths of important fields in the EEPROM for different ROM versions. Cloning a cluster would involve copying all these fields from the old cluster to the new cluster. Kw1281test or VCDS would then need to be used to set the soft coding in the new cluster but the new cluster would not need to be paired to the ECU because copying the below fields effectively does that.
+
+| Field (Length)                              | VWK501 | VWK503 | VQMJ07 | K5MJ07 |      |
+| ------------------------------------------- | ------ | ------ | ------ | ------ | ---- |
+| Key IDs (64)                                | 0x020  | 0x070  | 0x070  | 0x070  |      |
+| Immo Key (24)                               | 0x072  | 0x0B0  | 0x0B0  | 0x0B0  |      |
+| Key Count (3)                               | 0x08A  | 0x0C8  | 0x0C8  | 0x0C8  |      |
+| Immo Status (3)                             | 0x08D  | 0x0CB  | 0x0CB  | 0x0CB  |      |
+| Immo Id (42)                                | 0x0A2  | 0x0E0  | 0x0E0  | 0x0E0  |      |
+| SKC (6)                                     | 0x0CC  | 0x10A  | 0x10A  | 0x10A  |      |
+| VIN1 (17)                                   | 0x0D2  | 0x110  | 0x110  | 0x110  |      |
+| VIN2 (17)                                   | 0x0E4  | 0x122  | 0x122  | 0x122  |      |
+| [Odometer](Odometer.md) (23)                | 0x0F5  | 0x133  | 0x133  | 0x133  |      |
+| [Cluster ID](RadioChallengeResponse.md) (2) | 0x398  | 0x3CC  | 0x45C  | 0x50A  |      |
+
+The following table shows where various data is stored in the 2K-byte EEPROM and what RAM addresses the data is loaded into (VWK501MH 01.10).
 
 | EEPROM      | RAM           | Contents |
 | ----------- | ------------- | -------- |
