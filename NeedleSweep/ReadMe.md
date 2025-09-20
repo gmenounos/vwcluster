@@ -62,3 +62,11 @@ kw1281test COM1 10400 17 LoadEeprom 0x4F4 NeedleSweep-VWK502MH-09.00.bin
 ```
 kw1281test COM1 10400 17 LoadEeprom 0x4F6 NeedleSweep-KB5M07HH-09.00.bin
 ```
+
+### VWK503LL-09.00
+
+[NeedleSweep-VWK503LL-09.00.bin](./NeedleSweep-VWK503LL-09.00.bin)
+
+```
+kw1281test COM1 10400 17 LoadEeprom 0x4F6 NeedleSweep-VWK503LL-09.00.bin
+```
