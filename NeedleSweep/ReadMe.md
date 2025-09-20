@@ -31,7 +31,7 @@ kw1281test COM1 10400 17 DumpEeprom 0 2048 ClusterBackup.bin
 
 Next, download the patch and load it into the cluster with the kw1281test LoadEeprom command. Note that different ROMs have different EEPROM addresses where the patch needs to be loaded. Each section below contains a download link for the patch and the kw1281test command to load the patch, including the correct EEPROM address. You may need to change "COM1" to the appropriate COM port for you KKL cable.
 
-Finally reset the cluster with the kw1281test Reset command:
+Finally, reset the cluster with the kw1281test Reset command:
 
 ```
 kw1281test COM1 10400 17 Reset
@@ -55,3 +55,8 @@ kw1281test COM1 10400 17 LoadEeprom 0x4F4 NeedleSweep-VWK501MH-00.88.bin
 kw1281test COM1 10400 17 LoadEeprom 0x4F4 NeedleSweep-VWK502MH-09.00.bin
 ```
 
+### KB5M07HH-09.00
+
+[NeedleSweep-KB5M07HH-09.00.bin](./NeedleSweep-KB5M07HH-09.00.bin)
+
+`kw1281test COM1 10400 17 LoadEeprom 0x4F6 NeedleSweep-KB5M07HH-09.00.bin`
