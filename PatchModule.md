@@ -39,7 +39,7 @@ The data block consists of 1-6 (possibly up to 10) patches. Each patch is a 4-by
 - A0 - The least significant byte of the physical ROM address.
 - D0 - The ROM data replacement byte.
 
-After all the 4-byte sequences there is a 2-byte trailer that is loaded into the PER1 and PER0 registers of the memory patch module in order to specify how many patches should be applied. In order to apply all patches in the data block, raise 2 to the power of one more than the number of patches and add 1. The first byte of the trailer stores the high byte of this result and the second byte stores the low byte of this result. For example, if there are 4 patches then the result would be:
+After all the 4-byte sequences there is a 2-byte trailer that is loaded into the PER1 and PER0 registers of the memory patch module in order to specify how many patches should be applied. In order to apply all patches in the data block, raise 2 to the power of one more than the number of patches and subtract 1. The first byte of the trailer stores the high byte of this result and the second byte stores the low byte of this result. For example, if there are 4 patches then the result would be:
 $$
 2^{4+1}-1 = 31
 $$
