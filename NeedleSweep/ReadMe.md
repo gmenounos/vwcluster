@@ -39,6 +39,22 @@ kw1281test COM1 10400 17 Reset
 
 Then turn the ignition key off, wait 30 seconds, turn it on again and hopefully you'll see the needles sweep.
 
+### KB5M07HH-09.00
+
+[NeedleSweep-KB5M07HH-09.00.bin](./NeedleSweep-KB5M07HH-09.00.bin)
+
+```
+kw1281test COM1 10400 17 LoadEeprom 0x4F6 NeedleSweep-KB5M07HH-09.00.bin
+```
+
+### VSQX01LM-01.00
+
+[NeedleSweep-VSQX01LM-01.00.bin](./NeedleSweep-VSQX01LM-01.00.bin)
+
+```
+kw1281test COM1 10400 17 LoadEeprom 0x552 NeedleSweep-VSQX01LM-01.00.bin
+```
+
 ### VWK501MH-00.88
 
 [NeedleSweep-VWK501MH-00.88.bin](./NeedleSweep-VWK501MH-00.88.bin)
@@ -53,14 +69,6 @@ kw1281test COM1 10400 17 LoadEeprom 0x4F4 NeedleSweep-VWK501MH-00.88.bin
 
 ```
 kw1281test COM1 10400 17 LoadEeprom 0x4F4 NeedleSweep-VWK502MH-09.00.bin
-```
-
-### KB5M07HH-09.00
-
-[NeedleSweep-KB5M07HH-09.00.bin](./NeedleSweep-KB5M07HH-09.00.bin)
-
-```
-kw1281test COM1 10400 17 LoadEeprom 0x4F6 NeedleSweep-KB5M07HH-09.00.bin
 ```
 
 ### VWK503LL-09.00
