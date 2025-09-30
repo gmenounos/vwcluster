@@ -17,7 +17,7 @@ Assuming your KKL cable is attached to serial port COM4, here is how to dump the
 .\kw1281test.exe COM4 10400 17 DumpMem 0x18000 0x8000
 .\kw1281test.exe COM4 10400 17 DumpMem 0x28000 0x8000
 .\kw1281test.exe COM4 10400 17 DumpMem 0x38000 0x8000
-.\kw1281test.exe COM4 10400 17 DumpMem 0x48000 0x4000
+.\kw1281test.exe COM4 10400 17 DumpMem 0x48000 0x8000
 ```
 This will create 5 files, which can be concatenated and then used to create a [6502bench SourceGen](https://6502bench.com/) project:
 
