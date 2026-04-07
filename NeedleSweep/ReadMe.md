@@ -15,6 +15,11 @@ The first needle sweep patches were written by Bodie Royle and made available on
 
 Several other needle/LED sweep patches have been independently developed by Feche and can be found on [his web site](https://feche.ar/).
 
+## Hayperek
+
+- [VW501MH LED Sweep Patch](https://hayperek.pl/en/2024/11/22/vw501-led-sweep-patch/)
+- [VW501MH LED Full Sweep Patch](https://hayperek.pl/en/2024/12/07/vw501mh-led-fullsweep-patch/)
+
 ## BitFab
 
 I have also developed some needle sweep patches. Mine are based on Bodie's patches, but with memory addresses updated to support other ROMS.
