@@ -14,6 +14,7 @@ If the key was correctly calculated from the seed and the secret table then the 
 
 | ROM            | Part Number(s)            | Seed/Key Secret Table Version | Conditions to Allow Changing the Access Level                |
 | -------------- | ------------------------- | ----------------------------- | ------------------------------------------------------------ |
+| K5MJ07HH-09.00 | 5J0920840BV               | $0B $00                       | Odometer Corrupt or < 100km                                  |
 | K5MJ07LM-08.10 | 5J0920810C                | $0B $00                       | Odometer Corrupt or < 100km                                  |
 | KB5M07HH-09.00 | 3U0920842B                | $0D $00                       | Odometer Corrupt or < 100km                                  |
 | V599LLA-01.00  | 1J0920800L                | ?                             | ?                                                            |
@@ -21,12 +22,19 @@ If the key was correctly calculated from the seed and the secret table then the 
 | VCB07LL-09.00  | 1JD920826E                | $01 $00                       | Always Allowed                                               |
 | VCLM09MH-09.00 | 3BD920848E                | $01 $00                       | Always Allowed                                               |
 | VMMJ08MH-09.00 | 1J5920826L                | $01 $00                       | Always Allowed                                               |
+| VQMJ06LM-09.00 | 6Q0920803D                | $03 $00                       |                                                              |
+| VQMJ07HH-08.40 | ?                         | $09 $00                       | Odometer Corrupt or < 100km or [valid checksum](#eeprom-checksum) |
+| VQMJ07LM-08.40 | 6Q0920923Q                | $09 $00                       | Odometer Corrupt or < 100km or [valid checksum](#eeprom-checksum) |
 | VQMJ07LM-09.00 | 6Y0920883M<br />6Q0920804 | $09 $00                       | Odometer Corrupt or < 100km or [valid checksum](#eeprom-checksum) |
 | VQMJ09HH-05.10 | 6QE920827C                | $09 $00                       | Odometer Corrupt or < 100km or [valid checksum](#eeprom-checksum) |
 | VSQX01LM-01.00 | 6Q0920800                 | $03 $00                       | Always Allowed                                               |
+| VSQX01LM-01.10 | 6L0920920N                | $03 $00                       |                                                              |
+| VT5M07LL-09.00 | 7H0920851K                | $03 $00                       |                                                              |
+| VT5P07LL-09.00 | 7H0920851R                | $03 $00                       |                                                              |
 | VWK501MH-00.88 | 1J5920926C                | $01 $00                       | Always Allowed                                               |
-| VWK501MH-01.00 |                           | $01 $00                       | Always Allowed                                               |
+| VWK501MH-01.00 | ?                         | $01 $00                       | Always Allowed                                               |
 | VWK501MH-01.10 | 3B7920946E                | $01 $00                       | Always Allowed                                               |
+| VWK502MH-09.00 | 1JD920826                 | $01 $00                       |                                                              |
 | VWK503LL-09.00 | 1J5920906J                | $01 $00                       | Always Allowed                                               |
 | VWK503MH-09.00 | 1J0920927                 | $01 $00                       | Always Allowed                                               |
 
