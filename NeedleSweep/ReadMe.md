@@ -19,6 +19,7 @@ Several other needle/LED sweep patches have been independently developed by Fech
 
 - [VW501MH LED Sweep Patch](https://hayperek.pl/en/2024/11/22/vw501-led-sweep-patch/)
 - [VW501MH LED Full Sweep Patch](https://hayperek.pl/en/2024/12/07/vw501mh-led-fullsweep-patch/)
+- [VWK503MH LED Full Sweep Patch](https://hayperek.pl/en/2024/12/16/vwk503mh-led-fullsweep-patch/)
 
 ## BitFab
 
